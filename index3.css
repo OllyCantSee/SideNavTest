@@ -1,0 +1,389 @@
+body {
+    padding: 0;
+    font-family: 'Geologica', sans-serif;
+    margin: 0;
+}
+
+:root {
+    font-size: 18px;
+    --color-primary: rgb(240, 240, 240);
+    --color-secondary: rgb(167, 167, 167);
+    --color-brand-primary: #141418;
+    --color-brand-secondary: #29292d;
+}
+
+@media (hover: hover) {
+.navbar {
+    z-index: 99;
+    padding: 0;
+    margin: 0;
+    position: fixed;
+}
+
+.navbar-nav {
+    transition: all 0.3s ease;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    background: var(--color-brand-primary);
+}
+
+.navbar-item {
+    transition: all 0.2s ease;
+    width: 100%;
+    cursor: pointer;
+}
+
+.navbar-item:last-child {
+    margin-top: auto;
+}
+
+.navbar-link { 
+    margin-left: 0.7rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+
+
+.navbar-link .duoicon-user, .duoicon-message-2, .duoicon-book-3, .duoicon-settings {
+    transition: all 0.2s ease;
+    margin-left: 0.2rem;
+    min-width: 3rem;
+    color: var(--color-secondary);
+}
+
+.duoicon .duoicon-primary-layer{
+    transition: all 0.2s ease;
+ }
+
+.navbar-item-title {
+    transition: opacity 0.3s ease, color 0.2s ease;
+    margin-left: 1rem;
+    color: var(--color-secondary);
+    opacity: 0;
+}
+
+.navbar-item:hover {
+    background: var(--color-brand-secondary);
+}
+
+.navbar-item:hover .navbar-item-title {
+    color: var(--color-primary);
+}
+
+.navbar-item:hover .duoicon .duoicon-primary-layer{
+    color: var(--color-primary)
+ }
+
+
+.card-container{
+    position: relative;
+    display: flex;
+}
+
+.card {
+    border-radius: 15px;
+    background: var(--color-brand-primary);
+    height: 420px;
+    width: 300px;
+    margin: 2rem 1rem;
+}
+
+.card-image {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    height: 180px;
+    margin: 0;
+    padding: 0;
+    background: rgb(134, 134, 134);
+}
+
+.card-title {
+    letter-spacing: 0.05rem;
+    color: var(--color-secondary);
+    font-weight: 200;
+    margin-left: 1rem;
+}
+
+.card-info {
+    color: var(--color-secondary);
+    font-weight: 200;
+    margin-top: -1rem;
+    margin-left: 1.2rem;
+}
+
+.top-users {
+    font-size: 2rem;
+    position: relative;
+    margin: 0;
+    top: 1rem;
+    margin-bottom: 2rem;
+    height: 2px;
+}
+
+.top-users-container {
+    left: 7rem;
+    margin: 0rem;
+    top: 2rem;
+    position: relative;
+}
+
+
+@media only screen and (min-width: 620px) {
+    .home-item {
+        border-top-right-radius: 15px;
+    }
+    
+    .settings-item {
+        border-bottom-right-radius: 15px;
+    }
+
+    .navbar-nav {
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }   
+
+    .navbar-nav:hover {
+        width: 16rem;
+    }
+
+    .navbar-nav:hover .navbar-item-title {
+        opacity: 100;
+    }
+    
+    .navbar-nav {
+        height: 100vh;
+        width: 5rem;
+    }
+}
+
+@media only screen and (max-width: 620px) {
+
+    .duoicon {
+        margin: 0;
+        max-width: 2rem;
+        height: 2rem;
+    }
+
+    .navbar-item-title {
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 1rem;
+        font-size: 12px;
+    }
+
+    .navbar {
+        transition: all 0.2s ease;
+        height: 3rem;
+        bottom: 0;
+        width: 100vw;
+    }
+
+    .home-item {
+        border-top-left-radius: 15px;
+    }
+
+    .settings-item {
+        border-top-right-radius: 15px;
+    }
+
+    .navbar-nav {
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        flex-direction: row;
+    }
+
+    .navbar-item {
+        width: 10rem;
+        margin-bottom: 1rem;
+    }
+
+    .navbar-link{
+        margin-bottom: 1rem;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .navbar-nav:hover .navbar-item-title {
+        opacity: 100;
+        }
+
+    .navbar:hover {
+        height: 4rem;
+    }
+}
+}
+
+@media (hover: none) {
+    .navbar {
+        z-index: 99;
+        padding: 0;
+        margin: 0;
+        position: fixed;
+    }
+    
+    .navbar-nav {
+        transition: all 0.3s ease;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        background: var(--color-brand-primary);
+    }
+    
+    .navbar-item {
+        transition: all 0.2s ease;
+        width: 100%;
+        cursor: pointer;
+    }
+    
+    .navbar-item:last-child {
+        margin-top: auto;
+    }
+    
+    .navbar-link { 
+        margin-left: 0.7rem;
+        height: 5rem;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+    }
+    
+    
+    
+    .navbar-link .duoicon-user, .duoicon-message-2, .duoicon-book-3, .duoicon-settings {
+        transition: all 0.2s ease;
+        margin-left: 0.2rem;
+        min-width: 3rem;
+        color: var(--color-secondary);
+    }
+    
+    .duoicon .duoicon-primary-layer{
+        transition: all 0.2s ease;
+     }
+    
+    .navbar-item-title {
+        transition: opacity 0.3s ease, color 0.2s ease;
+        margin-left: 1rem;
+        color: var(--color-secondary);
+        opacity: 0;
+    }
+    
+    .navbar-item:hover {
+        background: var(--color-brand-secondary);
+    }
+    
+    .navbar-item:hover .navbar-item-title {
+        color: var(--color-primary);
+    }
+    
+    .navbar-item:hover .duoicon .duoicon-primary-layer{
+        color: var(--color-primary)
+     }
+    
+    
+    .card-container{
+        position: relative;
+        display: flex;
+    }
+    
+    .card {
+        border-radius: 15px;
+        background: var(--color-brand-primary);
+        height: 420px;
+        width: 300px;
+        margin: 2rem 1rem;
+    }
+    
+    .card-image {
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        height: 180px;
+        margin: 0;
+        padding: 0;
+        background: rgb(134, 134, 134);
+    }
+    
+    .card-title {
+        letter-spacing: 0.05rem;
+        color: var(--color-secondary);
+        font-weight: 200;
+        margin-left: 1rem;
+    }
+    
+    .card-info {
+        color: var(--color-secondary);
+        font-weight: 200;
+        margin-top: -1rem;
+        margin-left: 1.2rem;
+    }
+    
+    .top-users {
+        font-size: 2rem;
+        position: relative;
+        margin: 0;
+        top: 1rem;
+        margin-bottom: 2rem;
+        height: 2px;
+    }
+    
+    .top-users-container {
+        left: 7rem;
+        margin: 0rem;
+        top: 2rem;
+        position: relative;
+    }
+
+    .duoicon {
+        margin: 0;
+        max-width: 2rem;
+        height: 2rem;
+    }
+
+    .navbar-item-title {
+        opacity: 100;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 1rem;
+        font-size: 12px;
+    }
+
+    .navbar {
+        transition: all 0.2s ease;
+        height: 4rem;
+        bottom: 0;
+        width: 100vw;
+    }
+
+    .home-item {
+        border-top-left-radius: 15px;
+    }
+
+    .settings-item {
+        border-top-right-radius: 15px;
+    }
+
+    .navbar-nav {
+        justify-content:space-evenly;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        flex-direction: row;
+    }
+
+    .navbar-item {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .navbar-link{
+        margin-bottom: 1rem;
+        justify-content: center;
+        flex-direction: column;
+    }
+    }
